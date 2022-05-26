@@ -4,6 +4,7 @@ import TotalCategorias from './components/totalCategorias';
 import ListadoProductos from './components/listadoProductos';
 import UltimoProducto from './components/ultimoProducto';
 import UltimoUsuario from './components/ultimoUsuario';
+import ListadoCategorias from './components/listadoCategorias';
 import Header from './components/header';
 import './App.css';
 
@@ -22,6 +23,8 @@ function App() {
       {<TotalCategorias/>}
       <br></br>
       {<ListadoProductos/>}
+      <br></br>
+      {<ListadoCategorias/>}
       <br></br>
       {<UltimoProducto/>}
       <br></br>
