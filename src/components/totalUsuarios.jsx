@@ -19,7 +19,16 @@ useEffect(()=>{
   traerDato();
 },[])
 
-return (<div> {usuarios.valor}</div>)
+return (<div> 
+         <div class="mainlogin">
+        <div>
+            <h4>Total de Usuarios</h4>
+        </div>
+        <form action="/usuarios/logins" method="POST">
+        {usuarios.valor}
+        </form>
+        </div>
+  </div>)
 }
 
 

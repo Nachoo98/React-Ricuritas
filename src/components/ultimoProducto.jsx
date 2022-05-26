@@ -21,11 +21,17 @@ useEffect(()=>{
 
 return (<div>
 
+       <div class="mainlogin">
+        <div>
+            <h4>Último Producto</h4>
+        </div>
+        <form action="/usuarios/logins" method="POST">
                 <p>{listadoProductos.id}</p>
                 <p>{listadoProductos.nombreProducto}</p>
-                <p>{listadoProductos.precio}</p>
+                <p>${listadoProductos.precio}</p>
                 <p>{listadoProductos.descripcion}</p>
-
+        </form>
+        </div>
 </div>)
 }
 

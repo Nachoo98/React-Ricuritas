@@ -19,12 +19,19 @@ useEffect(()=>{
 },[])
 
 return (<div>
-
-                <p>{listadoUsuarios.id}</p>
-                <p>{listadoUsuarios.nombreUsuario}</p>
-                <p>{listadoUsuarios.nombre}</p>
-                <p>{listadoUsuarios.apellido}</p>
-                <p>{listadoUsuarios.mail}</p>
+    
+    <div class="mainlogin">
+        <div>
+            <h4>Último Usuario Registrado</h4>
+        </div>
+        <form action="/usuarios/logins" method="POST">
+                <p>id: {listadoUsuarios.id}</p>
+                <p>Nombre de Usuario: {listadoUsuarios.nombreUsuario}</p>
+                <p>Nombre: {listadoUsuarios.nombre}</p>
+                <p>Apellido: {listadoUsuarios.apellido}</p>
+                <p>Mail: {listadoUsuarios.mail}</p>
+        </form>
+        </div>
 
 </div>)
 }

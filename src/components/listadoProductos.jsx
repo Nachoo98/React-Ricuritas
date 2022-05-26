@@ -19,20 +19,21 @@ useEffect(()=>{
     traerDato();
 },[])
 
-return (<div>
+return (<div className="mainlogin">
+     <h2>Listado de Productos</h2>
 <ul>
 {listadoProductos.length===0 && <p>...Cargando...</p>}
 {
     listadoProductos.map((listadoProducto, i)=>{
 
-        return (
-            <li key={i}>
-                <p>{listadoProducto.id}</p>
-                <p>{listadoProducto.nombreProducto}</p>
-                <p>{listadoProducto.precio}</p>
+        return (<div>
+            <li className="prueba" key={i}>
+                <p>{listadoProducto.id}-</p>
+                <p>{listadoProducto.nombreProducto}-</p>
+                <p>${listadoProducto.precio}-</p>
                 <p>{listadoProducto.descripcion}</p>
             </li>
-        )
+            </div>)
     }
     ) }
 </ul>

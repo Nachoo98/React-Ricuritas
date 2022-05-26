@@ -2,14 +2,14 @@ import React from 'react'
 import{useState, useEffect} from 'react'
 
 
-function TotalProductos(){
-const [productos,setProductos]=useState({valor:0});
+function TotalCategoria(){
+const [categoria,setCategorias]=useState({valor:0});
 function traerDato(){
-      fetch('http://localhost:3015/api/products')
+      fetch('http://localhost:3015/api/products/category')
    .then(response=>response.json())
    .then(data=>{
        console.log(data.total)
-       setProductos({valor: data.total});
+       setCategorias({valor: data.total});
    })
    .catch(error=>console.error(error));
 }
@@ -21,10 +21,10 @@ useEffect(()=>{
 return (<div>          
   <div className="mainlogin">
 <div>
-    <h4>Total de Productos</h4>
+    <h4>Total de Categorias</h4>
 </div>
 <form action="/usuarios/logins" method="POST">
-{productos.valor}
+{categoria.valor}
 </form>
 </div>
 </div>)
@@ -32,4 +32,4 @@ return (<div>
 
 
 
-export default TotalProductos;
+export default TotalCategoria;
