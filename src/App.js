@@ -8,6 +8,8 @@ import ListadoCategorias from './components/listadoCategorias';
 import Header from './components/header';
 import './App.css';
 
+//import { Router } from 'react-router-dom';
+
 function App() {
   return (
     <div className="App">

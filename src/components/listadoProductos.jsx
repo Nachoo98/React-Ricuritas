@@ -27,12 +27,12 @@ return (<div className="mainlogin">
     listadoProductos.map((listadoProducto, i)=>{
 
         return (<div>
-            <li className="prueba" key={i}>
-                <p>{listadoProducto.id}-</p>
-                <p>{listadoProducto.nombreProducto}-</p>
-                <p>${listadoProducto.precio}-</p>
-                <p>{listadoProducto.descripcion}</p>
-            </li>
+            <ul className="prueba" key={i}>
+                <li className='pruebaid'>{listadoProducto.id}</li>
+                <li classname='pruebanombre'>{listadoProducto.nombreProducto}</li>
+                <li>${listadoProducto.precio}</li>
+                <li>{listadoProducto.descripcion}</li>
+            </ul>
             </div>)
     }
     ) }

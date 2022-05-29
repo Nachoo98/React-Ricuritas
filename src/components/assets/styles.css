@@ -3,7 +3,7 @@
 }
 
 header {
-    background-color: #595959;
+    background-color: black;
     padding-bottom: 1%;
     color: black
 }
@@ -11,12 +11,11 @@ header {
 body {
     font-family: 'Dongle', sans-serif;
     font-weight: 300;
-    background-color: #dedede;
+    background-color: #fff;
     margin: 0px;
 }
 
 .nav_carrito {
-    border: solid 1px #595959;
     margin-top: 0%;
 }
 
@@ -402,14 +401,14 @@ li {
 }
 
 .mainlogin2 {
-    background-color: rgb(228, 222, 222);
+    background-color:#fff;
     margin-bottom: 2%;
     margin-top: 2%;
 }
 
 .mainlogin {
     text-align: center;
-    background-color: beige;
+    background-color: #ffe57b;
     padding-top: 25px;
     padding-bottom: 25px;
     display: flex;
@@ -867,3 +866,20 @@ display: none;
 .prueba{
     text-align: left;
 }
+    
+
+ul .prueba{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.pruebaid{
+    font-weight: bold ;
+}
+
+.pruebanombre{
+    text-decoration-line:underline;
+}
+
